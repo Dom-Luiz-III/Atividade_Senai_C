@@ -1,5 +1,5 @@
 # Descrição:
-No geral todos os códigos nesse repositório são bem simples porque a maioria tinha como propósito aprender lógica de programação e funções existentes na linguagem C como o struct e tipos de lógica como a lista encadeada.
+No geral todos os códigos nesse repositório são bem simples porque a maioria tinha como propósito aprender lógica de programação e funções existentes na linguagem C como o struct, ponteiro manual e tipos de lógica como a lista encadeada.
 Dos que estão disponíveis os mais interessantes são:
 
 "armazenar filmes.cpp" 
