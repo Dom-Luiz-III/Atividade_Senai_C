@@ -7,7 +7,7 @@ typedef struct filme{
 	char nome[10];
 	char gen[10];
 	int ano;
-	int codigo = 10; //Por algum motivo t· dando erro aqui
+	int codigo = 10;
 	char diretor[10];
 } movie;
 
@@ -35,13 +35,13 @@ int main(){
 					next++;
 				}
 				else{
-					printf ("\n\nO volume m·ximo de filmes cadastrados foi atingido.\n\n");
+					printf ("\n\nO volume m√°ximo de filmes cadastrados foi atingido.\n\n");
 					system("pause");
 				}
 				
 				break;
 			case 2:	
-				printf("\n\nInforme o cÛdigo: ");
+				printf("\n\nInforme o c√≥digo: ");
 				scanf("%d", &cod);
 				exibir_filme(&p[cod]);
 				break;
@@ -49,7 +49,7 @@ int main(){
 				exibir_filmes(p);
 				break;
 			case 4:
-				printf("\n\nDigite o cÛdigo de 0 a 9 para informar o filme que deseja excluir: ");
+				printf("\n\nDigite o c√≥digo de 0 a 9 para informar o filme que deseja excluir: ");
 				scanf("%d",&cod);
 				excluir_filme(p, cod);
 				break;
@@ -61,21 +61,21 @@ int main(){
 
 void exibir_menu(){
 	system("cls");
-	printf("Ol·!\nSeja bem vindo a nossa locadora!");
-	printf("\n\nPor favor, escolha uma dessas opÁıes abaixo e digite o seu n˙mero:\n\n");
+	printf("Ol√°!\nSeja bem vindo a nossa locadora!");
+	printf("\n\nPor favor, escolha uma dessas op√ß√µes abaixo e digite o seu n√∫mero:\n\n");
 	printf("    1 - Cadastrar filmes\n");
 	printf("    2 - Exibir filme\n");
 	printf("    3 - Exibir todos os filmes\n");
 	printf("    4 - Excluir filme\n");
 	printf("    5 - Sair\n\n");
-	printf("O n˙mero escolhido: ");
+	printf("O n√∫mero escolhido: ");
 }
 void cadastro(movie *p, int codigo){
 	system("cls");
 	fflush(stdin);
 	printf ("Informe o nome do filme: ");
 	gets ((*p).nome);
-	printf ("GÍnero do filme: ");
+	printf ("G√™nero do filme: ");
 	gets (p->gen);
 	printf("Ano: ");
 	scanf ("%d",&(*p).ano);
@@ -86,11 +86,11 @@ void cadastro(movie *p, int codigo){
 }
 void exibir_filme(movie *p){
 	system("cls");
-	printf("Insira o cÛdigo: %d",p->codigo);
+	printf("Insira o c√≥digo: %d",p->codigo);
 	system("cls");
 	printf("Nome do filme: \n");
 	puts (p->nome);	
-	printf("\nGÍnero: \n");
+	printf("\nG√™nero: \n");
 	puts (p->gen);
 	printf("\nAno: \n%d\n", p->ano);
 	printf("\nNome do diretor: \n");
@@ -119,6 +119,6 @@ void excluir_filme(movie *p, int cod){
 		}
 		cod ++;
 	}
-	printf("Esse espaÁo est· disponÌvel!\n\n");
+	printf("Esse espa√ßo est√° dispon√≠vel!\n\n");
 	system("pause");
 }
